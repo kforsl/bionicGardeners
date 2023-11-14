@@ -16,6 +16,30 @@ body {
     background-color: #ffffff;   
 }
 
+/* Font styling */
+
+h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #0a846e;
+    margin-top: 36px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header styling  */
+
 header {
     display: flex;
 }
@@ -60,6 +84,8 @@ header {
     height: 205px;
 }
 
+/* nav styling */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -75,7 +101,9 @@ nav a{
     font-size: 20px;
 
 }
-/* MAIN HÄR */
+
+/* MAIN styling */
+
 .main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -83,26 +111,6 @@ nav a{
     margin: 0 auto;
     gap: 25px;
 
-}
-
-h1 {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 700;
-    font-size: 48px;
-    text-align: center;
-    color: #0a846e;
-    margin-top: 36px;
-}
-
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-}
-
-p {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .round-big-img {
@@ -114,9 +122,7 @@ p {
     justify-content: center;
     align-items: center;
     margin: 48px;
-
 }
-
 
 .säsong-artikel {
     display: flex;
@@ -127,28 +133,6 @@ p {
 
 .säsong-artikel p {
     padding: 1em 0;
-}
-
-.green-btn {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #0a846e;
-    width: 179px;
-    height: 63px;
-    border: none;
-    border-radius: 9px;
-    color: white;
-}
-
-.red-btn {
-    font-size: 15px;
-    font-weight: 700;
-    background-color: #B93857;
-    width: 97px;
-    height: 30px;
-    border: none;
-    border-radius: 9px;
-    color: white;
 }
 
 .säsong-artikel button {
@@ -192,3 +176,31 @@ hr {
     grid-column: 2 / 3;
 }
 
+
+/* footer */
+
+
+
+/* button styling */
+
+.green-btn {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #0a846e;
+    width: 179px;
+    height: 63px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+}
+
+.red-btn {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #B93857;
+    width: 97px;
+    height: 30px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+}
