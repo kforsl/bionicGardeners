@@ -20,7 +20,7 @@ header {
     display: flex;
 }
 
-.headerPic{
+.header-pic{
     background-image: url(../img/header-pic.png);
     background-repeat: no-repeat;
     width: 500px;
@@ -30,11 +30,11 @@ header {
     align-items: center;
 }
 
-.headerPic img { 
+.header-pic img { 
     height: 186px;
 }
 
-.brownBg {
+.brown-bg {
     background-color: #9e6d52;
     width: 500px;
     height: 270px;
@@ -43,11 +43,11 @@ header {
     align-items: center;
 }
 
-.brownBg img {
+.brown-bg img {
     height: 196px;
 }
 
-.greenBg {
+.green-bg {
     background-color: #0a846e;
     width: 500px;
     height: 270px;
@@ -56,7 +56,7 @@ header {
     align-items: center;
 }
 
-.greenBg img {
+.green-bg img {
     height: 205px;
 }
 
@@ -76,7 +76,7 @@ nav a{
 
 }
 /* MAIN HÄR */
-.mainGrid {
+.main-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 
@@ -103,7 +103,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.roundBigImg {
+.round-big-img {
     background-color: #0a846e;
     width: 377px;
     height: 377px;
@@ -116,7 +116,7 @@ p {
 }
 
 
-.säsongArtikel {
+.säsong-artikel {
     grid-area: auto/span 3;
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@ p {
     margin-right: 41px;
 }
 
-.säsongArtikel p {
+.säsong-artikel p {
     padding: 1em 0;
 }
 
@@ -139,7 +139,7 @@ p {
     color: white;
 }
 
-.säsongArtikel button {
+.säsong-artikel button {
     margin-top: 25px;
     margin-left: auto;
 }
@@ -164,4 +164,6 @@ main article {
     padding-left: 30px;
 }
 
-main article h3 {}
+main article h3 {
+    
+}
