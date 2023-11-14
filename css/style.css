@@ -78,7 +78,10 @@ nav a{
 /* MAIN HÄR */
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 930px;
+    margin: 0 auto;
+    gap: 25px;
 
 }
 
@@ -89,7 +92,6 @@ h1 {
     text-align: center;
     color: #0a846e;
     margin-top: 36px;
-    grid-area: auto/span 6;
 }
 
 h2 {
@@ -112,12 +114,11 @@ p {
     justify-content: center;
     align-items: center;
     margin: 48px;
-    grid-area: auto/span 3;
+
 }
 
 
 .säsong-artikel {
-    grid-area: auto/span 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,6 +140,17 @@ p {
     color: white;
 }
 
+.red-btn {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #B93857;
+    width: 97px;
+    height: 30px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+}
+
 .säsong-artikel button {
     margin-top: 25px;
     margin-left: auto;
@@ -146,24 +158,37 @@ p {
 
 hr {
     margin-top: 93px;
-    grid-column: 3/span 3;
     border-width: 3px;
     width: 347px;
     background-color: #055647;
     
 }
 
-.TESTAR {
-    grid-area: auto/span 6;
+.planerade-plantor {
     text-align: center;
     margin-top: 66px;
+    grid-area: auto / span 3 ;
 }
 
-main article {
-    grid-area: auto/span 2;
-    padding-left: 30px;
+.card-left {
+    grid-area: auto/span 1;
+    width: 294px;
+    margin: 0 auto;
 }
 
-main article h3 {
-    
+.card-middle  {
+    grid-area: auto/span 1;
+    width: 294px;
+    margin: 0 auto;
 }
+
+.card-right {
+    grid-area: auto/span 1;
+    width: 294px;
+    margin: 0 auto;
+}
+
+.main-grid button {
+    grid-column: 2 / 3;
+}
+
