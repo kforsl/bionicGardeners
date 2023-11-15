@@ -37,6 +37,12 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: 600px;
+    font-family: Lato;
+}
+
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -45,6 +51,8 @@ h4 {
 
 p {
     font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -232,10 +240,27 @@ hr {
 
 
 .planterings-boxar{
-    font-family: lato;
+    
     display: flex; 
     justify-content: space-between;
     padding: 10px;
+}
+
+.planterings-boxar p{
+    font-family: Lato;
+    font-weight: 300;
+}
+
+.bildbg {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    width: 149px;
+    height: 206px;
+    top: 45px;
+    left: 72px;
 }
 
 
