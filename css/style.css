@@ -1,28 +1,31 @@
 /* import font style */
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@500&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@500&family=Roboto+Condensed&display=swap');
 
 * {
-    margin: 0; 
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-     background-color: #999;
+    background-color: #FCF5FC;
+    padding-bottom: 170px;
 }
 
 .wrapper {
     max-width: 1000px;
-    margin: 0 auto; 
-    background-color: #ffffff;   
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Font styling */
 
 h1 {
     font-family: 'Maven Pro', sans-serif;
-    font-size: 700;
+    font-weight: 500;
     font-size: 48px;
     text-align: center;
     color: #0a846e;
@@ -56,13 +59,47 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* button styling */
+
+.green-btn {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #0a846e;
+    width: 179px;
+    height: 63px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.wider-btn {
+    width: 281px;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.red-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgba(185, 56, 87, 1);
+    width: 97px;
+    height: 30px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+
+}
+
 /* header styling  */
 
 header {
     display: flex;
 }
 
-.header-pic{
+.header-pic {
     background-image: url(../img/header-pic.png);
     background-repeat: no-repeat;
     width: 500px;
@@ -72,9 +109,11 @@ header {
     align-items: center;
 }
 
-.header-pic img { 
+.header-pic img {
     height: 186px;
 }
+
+/* header Brown Card styling  */
 
 .brown-bg {
     background-color: #9e6d52;
@@ -89,6 +128,8 @@ header {
     height: 196px;
 }
 
+/* header Green Card styling  */
+
 .green-bg {
     background-color: #0a846e;
     width: 500px;
@@ -102,20 +143,21 @@ header {
     height: 205px;
 }
 
-/* nav styling */
+/* top navbar styling */
 
-nav {
+.top-nav {
     display: flex;
     justify-content: space-around;
-    padding: 20px; 
-    box-shadow: 0 4px 4px 0 rgba(3,56,47,0.11); 
+    padding: 20px;
+    box-shadow: 0 4px 4px 0 rgba(3, 56, 47, 0.11);
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #055647;
     font-family: 'Maven Pro', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    line-height: 23px;
     font-size: 20px;
 
 }
@@ -147,6 +189,8 @@ nav a{
     grid-column: auto / span 1;
 }
 
+/* Säsong att så styling  */
+
 .säsong-artikel {
     grid-column: auto / span 2;
     display: flex;
@@ -158,7 +202,7 @@ nav a{
 
 .säsong-artikel p {
     padding: 17px 0;
-    
+
 }
 
 .säsong-artikel button {
@@ -166,27 +210,30 @@ nav a{
     margin-left: auto;
 }
 
+/* line styling  */
+
 hr {
     margin-top: 93px;
     border: solid 2px #055647;
     width: 347px;
     border-radius: 3px;
     background-color: #055647;
-    grid-column: 1 / span 3;   
-    margin: 0 auto; 
+    grid-column: 1 / span 3;
+    margin: 0 auto;
 }
+
+/* Våra planerade planteringar styling  */
 
 .planerade-plantor {
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     text-align: center;
-
     margin-top: 41px;
     margin-bottom: 15px;
-    grid-area: auto / span 3 ;
+    grid-area: auto / span 3;
 }
 
-.planerade-plantor-sappling{
+.planerade-plantor-sappling {
     background-image: url(./img/seedling.svg);
 }
 
@@ -194,59 +241,17 @@ hr {
     grid-area: auto/span 1;
     width: 294px;
     margin: 0 auto;
-    box-shadow: 3px 4px 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.main-grid button {
-    grid-column: 2 / 3;
-}
-
-
-
-
-
-/* button styling */
-
-.green-btn {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #0a846e;
-    width: 179px;
-    height: 63px;
-    border: none;
-    border-radius: 9px;
-    color: white;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
-
-}
-
-.red-btn {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: rgba(185, 56, 87, 1);
-    width: 97px;
-    height: 30px;
-    border: none;
-    border-radius: 9px;
-    color: white;
-   
-}
-
-.card {
-    font-family: 'Inter', sans-serif;
-    margin: 0 auto;
-}
-
-
-.planterings-boxar{
-    
-    display: flex; 
+.planterings-boxar {
+    display: flex;
     justify-content: space-between;
     padding: 10px;
+    
 }
 
-.planterings-boxar p{
+.planterings-boxar p {
     font-family: Lato;
     font-weight: 300;
 }
@@ -255,7 +260,7 @@ hr {
     position: relative;
 }
 
-.icon {
+.plant-icon {
     position: absolute;
     width: 149px;
     height: 206px;
@@ -263,24 +268,52 @@ hr {
     left: 72px;
 }
 
+.center-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    grid-column: 1 / span 3;
+    margin: 0 auto;
+    margin-top: 31px;
+    margin-bottom: 39px;
 
-/* 
+    width: 157px;
+    height: 63px;
+}
 
-font-family: 'Fira Sans', sans-serif;
-font-family: 'Inter', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Open Sans', sans-serif;
+/* våra tidigare odlingar styling  */
 
-*/
+.odlingar-artikel {
+    grid-column: auto / span 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 87px;
+    margin-left: 5px;
+}
 
+.odlingar-artikel p {
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.odlingar-artikel button {
+    margin-right: auto;
+}
+
+
+/* Footer styling */
 
 .footer {
     background-image: url(/img/footer-pic.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 644px;
+    height: 590px;
     width: 1000px;
     display: flex;
+    margin-top: 45px; 
+}
+
+.hjärta {
+    margin: auto;
 }
 
 .vi-hörs {
@@ -294,22 +327,50 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .vi-hörs h2 {
+    font-family: 'Maven Pro';
+    font-weight: 500;
     font-size: 64px;
     margin-top: 50%;
 }
 
+
+.vi-hörs p {
+    font-family: 'Maven Pro';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
 .contact {
     display: flex;
-    width: 90%;
     justify-content: space-between;
-    font-size: 20px;
-    
+    width: 448px;
+    margin: 38px;
 }
+
 .contact span {
     display: flex;
     align-items: center;
+
 }
+
 .contact img {
     margin: 0 10px;
     width: 31px;
+}
+
+
+.nav-to-top {
+    color: black;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+    padding: 12px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
